@@ -21,6 +21,10 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Chroma Salon | Premium Beauty & Wellness Services",
   description: "Discover your true radiance at Chroma Salon. Premium hair styling, advanced skincare, nail art, and bridal makeup by certified experts.",
+  icons: {
+    icon: "/black-logo.jpeg",
+    apple: "/black-logo.jpeg",
+  },
 };
 
 export const viewport: Viewport = {
