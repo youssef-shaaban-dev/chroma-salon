@@ -24,7 +24,7 @@ export default function CtaSection({ t }: CtaSectionProps) {
           className="space-y-6 max-w-3xl mx-auto"
         >
           <span className="text-brand-rose font-bold text-sm tracking-wider uppercase">
-            Let's Connect
+            Let&apos;s Connect
           </span>
           <h2 className={`${t.fontHead} text-3xl sm:text-4xl md:text-5xl font-bold text-brand-dark leading-tight`}>
             {t.cta.title}
