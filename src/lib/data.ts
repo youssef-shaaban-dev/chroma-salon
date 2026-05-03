@@ -1,0 +1,131 @@
+import type { Variants } from "framer-motion";
+
+export const pageData = {
+  fontHead: "font-[family-name:var(--font-playfair)]",
+  fontBody: "font-[family-name:var(--font-montserrat)]",
+  nav: {
+    services: "Services",
+    whyUs: "Why Us",
+    testimonials: "Reviews",
+    contact: "Contact",
+    bookBtn: "Book Now",
+  },
+  hero: {
+    h1: "Discover Your True Radiance at Chroma Salon",
+    sub: "Premium hair, skin, and nail services by certified beauty experts.",
+    cta: "Book Your Appointment Now",
+  },
+  whyUs: {
+    title: "Why Choose Chroma Salon",
+    sub: "Dedicated to bringing out your inner beauty through expert care.",
+    points: [
+      {
+        title: "Certified Experts",
+        desc: "Our top beauty specialists hold prestigious international certifications.",
+      },
+      {
+        title: "Premium Products",
+        desc: "We use exclusively premium, high-performance, skin-friendly products.",
+      },
+      {
+        title: "Sterilized Environment",
+        desc: "Strict adherence to medical-grade sterilization for ultimate safety.",
+      },
+      {
+        title: "Free Consultation",
+        desc: "Receive tailored, professional beauty assessments with every visit.",
+      },
+    ],
+  },
+  services: {
+    title: "Our Signature Services",
+    sub: "A curated range of high-end beauty treatments for ultimate luxury.",
+    cards: [
+      {
+        id: "hair",
+        title: "Elite Hair Styling & Coloring",
+        desc: "Custom cuts, multidimensional coloring, and deep restoration therapies.",
+        price: "Starting from $45",
+      },
+      {
+        id: "skincare",
+        title: "Premium Skincare & Facials",
+        desc: "Revitalize your glow with medical-grade facials and clinical-level hydration.",
+        price: "Starting from $65",
+      },
+      {
+        id: "makeup",
+        title: "Bridal & Evening Makeup",
+        desc: "Breathtaking bridal transformations and camera-ready glamor.",
+        price: "Starting from $120",
+      },
+      {
+        id: "nails",
+        title: "Luxury Nail Art & Care",
+        desc: "Flawless manicures, pedicures, and modern bespoke extensions.",
+        price: "Starting from $35",
+      },
+    ],
+  },
+  testimonials: {
+    title: "What Our Clients Say",
+    sub: "Hear directly from our wonderful clients about their salon experience.",
+    reviews: [
+      {
+        name: "Eleanor Vance",
+        text: "The most relaxing and professional salon experience I've ever had. My hair feels absolutely incredible and soft!",
+      },
+      {
+        name: "Sophia Martinez",
+        text: "Perfect facials! My skin was glowing for weeks. The aesthetic here is so calming and luxurious.",
+      },
+      {
+        name: "Amira Yusuf",
+        text: "An amazing bridal makeup experience. The artists were so intuitive about what works best with my features.",
+      },
+    ],
+  },
+  booking: {
+    title: "Instant Booking",
+    sub: "Fill in your details below and our team will confirm your slot within minutes.",
+    nameLabel: "Full Name",
+    namePlace: "e.g. Eleanor Vance",
+    phoneLabel: "Phone Number",
+    phonePlace: "e.g. +962 7 9963 9434",
+    serviceLabel: "Select Service",
+    servicePlace: "Choose a service...",
+    dateLabel: "Preferred Date",
+    submit: "Confirm Booking",
+    whatsappBtn: "Chat on WhatsApp",
+    successTitle: "Booking Confirmed!",
+    successDesc: "Thank you for choosing Chroma Salon! Our team will reach out via Phone/WhatsApp shortly to confirm your booking details.",
+  },
+  footer: {
+    hours: "Hours: Mon - Sat: 10am - 9pm | Sun: Closed",
+    location: "Luxury Beauty Blvd, Uptown District, 5th Floor",
+    copy: "© 2026 Chroma Salon. All Rights Reserved.",
+    callUs: "Call Us Now",
+    chatUs: "WhatsApp",
+  },
+};
+
+export type PageData = typeof pageData;
+
+export const fadeInUp: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, ease: "easeOut" },
+  },
+};
+
+export const staggerContainer: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
