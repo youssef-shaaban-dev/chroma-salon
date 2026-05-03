@@ -85,22 +85,38 @@ export const pageData = {
       },
     ],
   },
-  booking: {
-    title: "Instant Booking",
-    sub: "Fill in your details below and our team will confirm your slot within minutes.",
-    nameLabel: "Full Name",
-    namePlace: "e.g. Eleanor Vance",
-    phoneLabel: "Phone Number",
-    phonePlace: "e.g. +962 7 9963 9434",
-    serviceLabel: "Select Service",
-    servicePlace: "Choose a service...",
-    dateLabel: "Preferred Date",
-    submit: "Confirm Booking",
-    whatsappBtn: "Chat on WhatsApp",
-    successTitle: "Booking Confirmed!",
-    successDesc: "Thank you for choosing Chroma Salon! Our team will reach out via Phone/WhatsApp shortly to confirm your booking details.",
+  gallery: {
+    title: "Our Masterpieces",
+    sub: "A glimpse of premium styling, skincare, and bridal transformations.",
+  },
+  faqs: {
+    title: "Frequently Asked Questions",
+    sub: "Get answers to common queries about our premium treatments and booking.",
+    items: [
+      {
+        q: "What products do you use for hair styling and treatments?",
+        a: "We exclusively use premium, professional, and organic-infused styling lines to ensure multidimensional glow and ultimate hair health."
+      },
+      {
+        q: "Do I need to book a free consultation before my treatment?",
+        a: "While it is not mandatory, we highly recommend booking a complimentary 15-minute consultation to personalize your treatment plan."
+      },
+      {
+        q: "Do you offer tailored bridal packages?",
+        a: "Yes! We offer fully personalized bridal packages that include trials, skincare prep, hair, and makeup styling for your special day."
+      }
+    ]
+  },
+  cta: {
+    title: "Ready to Experience True Luxury?",
+    sub: "Reach out via WhatsApp or Instagram to book your premium beauty session today.",
+    whatsapp: "Book on WhatsApp",
+    instagram: "Visit Instagram",
   },
   footer: {
+    desc: "The pinnacle of luxury hair, skincare, and bridal expertise. Redefine your beauty.",
+    info: "Our Information",
+    help: "Instant Help",
     hours: "Hours: Mon - Sat: 10am - 9pm | Sun: Closed",
     location: "Luxury Beauty Blvd, Uptown District, 5th Floor",
     copy: "© 2026 Chroma Salon. All Rights Reserved.",
@@ -108,6 +124,7 @@ export const pageData = {
     chatUs: "WhatsApp",
   },
 };
+
 
 export type PageData = typeof pageData;
 

@@ -39,7 +39,7 @@ export default function Hero({ t, scrollToSection }: HeroProps) {
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-4 pt-4">
             <motion.button
-              onClick={() => scrollToSection("booking")}
+              onClick={() => scrollToSection("cta")}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="w-full sm:w-auto bg-brand-rose text-white text-base hover:bg-brand-rose/95 px-8 py-4 rounded-full font-bold text-center tracking-wide shadow-lg hover:shadow-brand-rose/30 transition duration-300"

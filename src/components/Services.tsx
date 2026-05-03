@@ -14,13 +14,10 @@ export interface BookingForm {
 
 interface ServicesProps {
   t: PageData;
-  setBookingForm: (val: BookingForm) => void;
-  scrollToSection: (id: string) => void;
-  bookingForm: BookingForm;
 }
 
 
-export default function Services({ t, setBookingForm, scrollToSection, bookingForm }: ServicesProps) {
+export default function Services({ t }: ServicesProps) {
   return (
     <section id="services" className="py-24 px-6 lg:px-12 bg-white">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
@@ -85,15 +82,9 @@ export default function Services({ t, setBookingForm, scrollToSection, bookingFo
                 </p>
               </div>
 
-              <div className="flex items-center justify-between pt-4 border-t border-brand-rose/10 relative z-10">
-                <span className="text-lg font-extrabold text-brand-dark">
-                  {service.price}
-                </span>
+              <div className="flex items-center justify-end pt-4 border-t border-brand-rose/10 relative z-10">
                 <button
-                  onClick={() => {
-                    setBookingForm({ ...bookingForm, service: service.title });
-                    scrollToSection("booking");
-                  }}
+                  onClick={() => window.open(`https://wa.me/962799639434?text=Hello,%20I'd%20like%20to%20book%20an%20appointment%20for:%20${encodeURIComponent(service.title)}`, "_blank")}
                   className="text-brand-rose text-sm font-bold flex items-center gap-1.5 hover:underline"
                 >
                   <span>{t.nav.bookBtn}</span>

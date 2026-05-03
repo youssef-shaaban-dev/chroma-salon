@@ -30,7 +30,7 @@ export default function Footer({ t, scrollToSection }: FooterProps) {
           </div>
 
           <p className="text-sm font-light text-white/70 leading-relaxed max-w-sm">
-            The pinnacle of luxury hair, skincare, and bridal expertise. Redefine your beauty.
+            {t.footer.desc}
           </p>
           <div className="flex items-center space-x-4 pt-2">
             <a
@@ -55,7 +55,7 @@ export default function Footer({ t, scrollToSection }: FooterProps) {
         {/* Quick Info & Schedule */}
         <div className="md:col-span-4 space-y-3">
           <h4 className={`${t.fontHead} text-lg font-bold tracking-wide`}>
-            Our Information
+            {t.footer.info}
           </h4>
           <p className="text-sm font-light text-white/70">{t.footer.hours}</p>
           <p className="text-sm font-light text-white/70">{t.footer.location}</p>
@@ -64,8 +64,9 @@ export default function Footer({ t, scrollToSection }: FooterProps) {
         {/* Call to Action Call now */}
         <div className="md:col-span-4 space-y-4">
           <h4 className={`${t.fontHead} text-lg font-bold tracking-wide`}>
-            Instant Help
+            {t.footer.help}
           </h4>
+
           <div className="flex flex-col sm:flex-row gap-3">
             <a
               href="tel:+962799639434"

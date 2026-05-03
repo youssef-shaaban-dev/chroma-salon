@@ -5,8 +5,10 @@ import Header from "../../components/Header";
 import Hero from "../../components/Hero";
 import WhyUs from "../../components/WhyUs";
 import Services from "../../components/Services";
+import GallerySection from "../../components/GallerySection";
 import Testimonials from "../../components/Testimonials";
-import BookingSection from "../../components/BookingSection";
+import FaqSection from "../../components/FaqSection";
+import CtaSection from "../../components/CtaSection";
 import Footer from "../../components/Footer";
 import FloatingContact from "../../components/FloatingContact";
 import { PageData } from "../../lib/data";
@@ -17,13 +19,6 @@ export default function HomeClient({
   pageTranslations: Omit<PageData, "fontHead" | "fontBody">;
 }) {
   const [scrolled, setScrolled] = useState(false);
-  const [bookingForm, setBookingForm] = useState({
-    name: "",
-    phone: "",
-    service: "",
-    date: "",
-
-  });
 
   const t: PageData = {
     fontHead: "font-[family-name:var(--font-playfair)]",
@@ -54,9 +49,11 @@ export default function HomeClient({
       <main className="pt-20">
         <Hero t={t} scrollToSection={scrollToSection} />
         <WhyUs t={t} />
-        <Services t={t} setBookingForm={setBookingForm} scrollToSection={scrollToSection} bookingForm={bookingForm} />
+        <Services t={t} />
+        <GallerySection t={t} />
         <Testimonials t={t} />
-        <BookingSection t={t} setBookingForm={setBookingForm} bookingForm={bookingForm} />
+        <FaqSection t={t} />
+        <CtaSection t={t} />
       </main>
       <Footer t={t} scrollToSection={scrollToSection} />
     </div>

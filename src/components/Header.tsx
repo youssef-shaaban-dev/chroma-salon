@@ -35,14 +35,14 @@ export default function Header({ t, scrolled, scrollToSection }: HeaderProps) {
       <div className="max-w-7xl mx-auto flex items-center justify-between h-20 px-6 lg:px-12">
         {/* Logo */}
         <div
-          className="flex items-center space-x-3 cursor-pointer"
+          className="flex items-center space-x-3 cursor-pointer select-none group"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           <Image
             src="/black-logo.jpeg"
             alt="Chroma Salon Logo"
-            width={80}
-            height={80}
+            width={90}
+            height={90}
             className="rounded-full object-cover"
           />
         </div>
@@ -69,7 +69,7 @@ export default function Header({ t, scrolled, scrollToSection }: HeaderProps) {
             {t.nav.testimonials}
           </button>
           <button
-            onClick={() => handleLinkClick("booking")}
+            onClick={() => handleLinkClick("cta")}
             className="text-brand-dark/80 hover:text-brand-rose font-medium transition duration-200"
           >
             {t.nav.contact}
@@ -93,7 +93,7 @@ export default function Header({ t, scrolled, scrollToSection }: HeaderProps) {
             <InstagramIcon className="w-5 h-5" />
           </a>
           <button
-            onClick={() => handleLinkClick("booking")}
+            onClick={() => handleLinkClick("cta")}
             className="bg-brand-rose text-white hover:bg-brand-rose/90 px-6 py-2.5 rounded-full font-semibold shadow-md hover:shadow-brand-rose/20 transform transition hover:-translate-y-0.5 duration-200"
           >
             {t.nav.bookBtn}
@@ -141,7 +141,7 @@ export default function Header({ t, scrolled, scrollToSection }: HeaderProps) {
                 {t.nav.testimonials}
               </button>
               <button
-                onClick={() => handleLinkClick("booking")}
+                onClick={() => handleLinkClick("cta")}
                 className="text-brand-dark hover:text-brand-rose transition duration-200 text-left"
               >
                 {t.nav.contact}
@@ -165,7 +165,7 @@ export default function Header({ t, scrolled, scrollToSection }: HeaderProps) {
                 </span>
               </a>
               <button
-                onClick={() => handleLinkClick("booking")}
+                onClick={() => handleLinkClick("cta")}
                 className="bg-brand-rose text-white w-full py-3 rounded-full text-center font-semibold shadow-md hover:shadow-brand-rose/20 transform hover:-translate-y-0.5 duration-200"
               >
                 {t.nav.bookBtn}
