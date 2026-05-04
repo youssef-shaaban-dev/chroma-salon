@@ -44,7 +44,7 @@ export default function Services({ t }: ServicesProps) {
           {/* Aesthetic Service Sidebar Visual */}
           <div className="relative aspect-square sm:aspect-video lg:aspect-[4/5] w-full rounded-2xl overflow-hidden shadow-lg border border-brand-rose/15 hidden md:block">
             <Image
-              src="/services.png"
+              src="/services_premium.png"
               alt="Fine quality aesthetic skincare services"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
