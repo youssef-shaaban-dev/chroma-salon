@@ -8,7 +8,6 @@ import Services from "../../components/Services";
 import GallerySection from "../../components/GallerySection";
 import Testimonials from "../../components/Testimonials";
 import FaqSection from "../../components/FaqSection";
-import CtaSection from "../../components/CtaSection";
 import Footer from "../../components/Footer";
 import FloatingContact from "../../components/FloatingContact";
 import { PageData } from "../../lib/data";
@@ -53,7 +52,6 @@ export default function HomeClient({
         <GallerySection t={t} />
         <Testimonials t={t} />
         <FaqSection t={t} />
-        <CtaSection t={t} />
       </main>
       <Footer t={t} scrollToSection={scrollToSection} />
     </div>

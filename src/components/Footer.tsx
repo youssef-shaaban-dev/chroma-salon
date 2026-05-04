@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Sparkles, Phone, MessageCircle } from "lucide-react";
+import { Phone, MessageCircle, MapPin } from "lucide-react";
 import { InstagramIcon } from "./InstagramIcon";
 
 
@@ -58,7 +58,17 @@ export default function Footer({ t, scrollToSection }: FooterProps) {
             {t.footer.info}
           </h4>
           <p className="text-sm font-light text-white/70">{t.footer.hours}</p>
-          <p className="text-sm font-light text-white/70">{t.footer.location}</p>
+          <p className="text-sm font-light text-white/70">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Chroma+by+Hair+Boy+Amman"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-brand-rose hover:underline underline-offset-4 flex items-center gap-2 transition duration-200"
+            >
+              <MapPin className="w-4 h-4 text-brand-rose flex-shrink-0" />
+              <span>{t.footer.location}</span>
+            </a>
+          </p>
         </div>
 
         {/* Call to Action Call now */}
@@ -98,12 +108,14 @@ export default function Footer({ t, scrollToSection }: FooterProps) {
           >
             {t.nav.services}
           </button>
-          <button
-            onClick={() => scrollToSection("booking")}
+          <a
+            href="https://wa.me/962799639434"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-brand-rose transition duration-200"
           >
             {t.nav.bookBtn}
-          </button>
+          </a>
         </div>
       </div>
     </footer>

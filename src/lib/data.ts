@@ -14,6 +14,8 @@ export const pageData = {
     h1: "Discover Your True Radiance at Chroma Salon",
     sub: "Premium hair, skin, and nail services by certified beauty experts.",
     cta: "Book Your Appointment Now",
+    badgeTitle: "Fast Bookings",
+    badgeDesc: "Book in seconds without friction",
   },
   whyUs: {
     title: "Why Choose Chroma Salon",
@@ -118,7 +120,7 @@ export const pageData = {
     info: "Our Information",
     help: "Instant Help",
     hours: "Hours: Mon - Sat: 10am - 9pm | Sun: Closed",
-    location: "Luxury Beauty Blvd, Uptown District, 5th Floor",
+    location: "Fawzi Al-Mughrabi St., Amman, Jordan",
     copy: "© 2026 Chroma Salon. All Rights Reserved.",
     callUs: "Call Us Now",
     chatUs: "WhatsApp",

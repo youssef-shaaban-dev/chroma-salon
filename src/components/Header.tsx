@@ -5,7 +5,6 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useLocale } from "next-intl";
-import { InstagramIcon } from "./InstagramIcon";
 import { PageData } from "../lib/data";
 
 interface HeaderProps {
@@ -39,11 +38,11 @@ export default function Header({ t, scrolled, scrollToSection }: HeaderProps) {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           <Image
-            src="/black-logo.jpeg"
+            src="/white-logo.jpg"
             alt="Chroma Salon Logo"
             width={90}
             height={90}
-            className="rounded-full object-cover"
+            className="rounded-full object-cover border-2 border-brand-rose"
           />
         </div>
 
@@ -68,12 +67,14 @@ export default function Header({ t, scrolled, scrollToSection }: HeaderProps) {
           >
             {t.nav.testimonials}
           </button>
-          <button
-            onClick={() => handleLinkClick("cta")}
+          <a
+            href="https://wa.me/962799639434"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-brand-dark/80 hover:text-brand-rose font-medium transition duration-200"
           >
             {t.nav.contact}
-          </button>
+          </a>
         </nav>
 
         {/* Desktop Right Side CTAs */}
@@ -85,19 +86,13 @@ export default function Header({ t, scrolled, scrollToSection }: HeaderProps) {
             {locale === "en" ? "عربي" : "English"}
           </a>
           <a
-            href="https://www.instagram.com/chroma.byhairboy?igsh=M2d6YjlzajU4dnJs"
+            href="https://wa.me/962799639434"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 text-brand-dark/70 hover:text-brand-rose transition duration-200"
-          >
-            <InstagramIcon className="w-5 h-5" />
-          </a>
-          <button
-            onClick={() => handleLinkClick("cta")}
             className="bg-brand-rose text-white hover:bg-brand-rose/90 px-6 py-2.5 rounded-full font-semibold shadow-md hover:shadow-brand-rose/20 transform transition hover:-translate-y-0.5 duration-200"
           >
             {t.nav.bookBtn}
-          </button>
+          </a>
         </div>
 
 
@@ -140,20 +135,14 @@ export default function Header({ t, scrolled, scrollToSection }: HeaderProps) {
               >
                 {t.nav.testimonials}
               </button>
-              <button
-                onClick={() => handleLinkClick("cta")}
+              <a
+                href="https://wa.me/962799639434"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
                 className="text-brand-dark hover:text-brand-rose transition duration-200 text-left"
               >
                 {t.nav.contact}
-              </button>
-              <a
-                href="https://www.instagram.com/chroma.byhairboy?igsh=M2d6YjlzajU4dnJs"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-brand-dark hover:text-brand-rose transition duration-200 flex items-center justify-between"
-              >
-                <span>Instagram</span>
-                <InstagramIcon className="w-5 h-5" />
               </a>
               <a
                 href={locale === "en" ? "/ar" : "/en"}
@@ -164,12 +153,15 @@ export default function Header({ t, scrolled, scrollToSection }: HeaderProps) {
                   {locale === "en" ? "عربي" : "EN"}
                 </span>
               </a>
-              <button
-                onClick={() => handleLinkClick("cta")}
-                className="bg-brand-rose text-white w-full py-3 rounded-full text-center font-semibold shadow-md hover:shadow-brand-rose/20 transform hover:-translate-y-0.5 duration-200"
+              <a
+                href="https://wa.me/962799639434"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+                className="bg-brand-rose text-white w-full py-3 rounded-full text-center font-semibold shadow-md hover:shadow-brand-rose/20 transform hover:-translate-y-0.5 duration-200 block"
               >
                 {t.nav.bookBtn}
-              </button>
+              </a>
 
             </div>
           </motion.div>

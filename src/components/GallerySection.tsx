@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { PageData, fadeInUp, staggerContainer } from "../lib/data";
 
@@ -8,11 +7,11 @@ interface GallerySectionProps {
   t: PageData;
 }
 
-const GALLERY_IMAGES = [
-  { src: "/hero.png", alt: "Signature Hairstyling" },
-  { src: "/services.png", alt: "Skincare Transformation" },
-  { src: "/skincare_treatment.png", alt: "Bridal Glow" },
-  { src: "/bridal_styling.png", alt: "Ultimate Care" },
+const GALLERY_ITEMS = [
+  { src: "/chroma.mp4", alt: "Signature Transformation", fallback: "/chroma.mp4" },
+  { src: "/chroma-2.mp4", alt: "Master Artistry", fallback: "/chroma-2.mp4" },
+  { src: "/chroma-3.mp4", alt: "Special Occasions & Styling", fallback: "/chroma.mp4" },
+  { src: "/chroma-4.mp4", alt: "Complete Luxury Care", fallback: "/chroma-2.mp4" },
 ];
 
 export default function GallerySection({ t }: GallerySectionProps) {
@@ -42,24 +41,38 @@ export default function GallerySection({ t }: GallerySectionProps) {
           whileInView="visible"
           viewport={{ once: true }}
           variants={staggerContainer}
-          className="grid grid-cols-1 sm:grid-cols-2 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
         >
-          {GALLERY_IMAGES.map((img, index) => (
+          {GALLERY_ITEMS.map((item, index) => (
             <motion.div
               key={index}
               variants={fadeInUp}
               whileHover={{ scale: 1.02 }}
-              className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-md border border-brand-rose/15 group"
+              className="relative aspect-[4/5] sm:aspect-[9/16] rounded-3xl overflow-hidden shadow-md border border-brand-rose/15 bg-brand-dark flex flex-col justify-between group select-none"
             >
-              <Image
-                src={img.src}
-                alt={img.alt}
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover object-center transform group-hover:scale-105 transition duration-500"
+              <video
+                src={item.src}
+                autoPlay
+                muted
+                loop
+                playsInline
+                onError={(e) => {
+                  e.currentTarget.src = item.fallback;
+                }}
+                className="w-full h-full object-cover object-center transform group-hover:scale-105 transition duration-500 select-none pointer-events-auto"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
-                <span className="text-white font-semibold text-lg">{img.alt}</span>
+
+              {/* Shared Glassmorphic Bottom Overlay */}
+              <div className="absolute bottom-0 inset-x-0 h-16 bg-white/70 hover:bg-white/90 backdrop-blur-md border-t border-brand-rose/15 transition duration-300 flex items-center justify-between px-5 z-20 select-none">
+                <span className="text-brand-dark font-bold text-sm sm:text-base tracking-wide truncate">
+                  {item.alt}
+                </span>
+                <span className="flex items-center space-x-1.5 rtl:space-x-reverse flex-shrink-0">
+                  <span className="w-2 h-2 rounded-full bg-brand-rose animate-pulse" />
+                  <span className="text-brand-rose font-bold text-xs uppercase tracking-wider">
+                    Live
+                  </span>
+                </span>
               </div>
             </motion.div>
           ))}
