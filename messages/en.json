@@ -9,7 +9,7 @@
     },
     "hero": {
       "h1": "Discover Your True Radiance at Chroma Salon",
-      "sub": "Premium hair, skin, and nail services by certified beauty experts.",
+      "sub": "Premium hair, microblading, and nail services by certified beauty experts.",
       "cta": "Book Your Appointment Now",
       "badgeTitle": "Fast Bookings",
       "badgeDesc": "Book in seconds without friction"
@@ -46,7 +46,7 @@
           "desc": "Custom cuts, multidimensional coloring, and deep restoration therapies."
         },
         {
-          "id": "skincare",
+          "id": "microblading",
           "title": "Lip Microblading & Blushing",
           "desc": "Enhance your natural lip color and definition with long-lasting, flawless techniques."
         },
@@ -72,7 +72,7 @@
         },
         {
           "name": "Sophia Martinez",
-          "text": "Perfect facials! My skin was glowing for weeks. The aesthetic here is so calming and luxurious."
+          "text": "Perfect Microblading! My lips looked flawless and healthy for weeks. The aesthetic here is so calming and luxurious."
         },
         {
           "name": "Amira Yusuf",
@@ -82,7 +82,7 @@
     },
     "gallery": {
       "title": "Our Masterpieces",
-      "sub": "A glimpse of premium styling, skincare, and bridal transformations."
+      "sub": "A glimpse of premium styling, microblading, and bridal transformations."
     },
     "faqs": {
       "title": "Frequently Asked Questions",
@@ -98,7 +98,7 @@
         },
         {
           "q": "Do you offer tailored bridal packages?",
-          "a": "Yes! We offer fully personalized bridal packages that include trials, skincare prep, hair, and makeup styling for your special day."
+          "a": "Yes! We offer fully personalized bridal packages that include trials, microblading, hair, and makeup styling for your special day."
         }
       ]
     },
@@ -109,7 +109,7 @@
       "instagram": "Visit Instagram"
     },
     "footer": {
-      "desc": "The pinnacle of luxury hair, skincare, and bridal expertise. Redefine your beauty.",
+      "desc": "The pinnacle of luxury hair, microblading, and bridal expertise. Redefine your beauty.",
       "info": "Our Information",
       "help": "Instant Help",
       "hours": "Hours: Everyday 10am - 8pm",

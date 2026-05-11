@@ -13,9 +13,9 @@ interface HeroProps {
 
 const slides = [
   { src: "/hero.png", alt: "Chroma Salon Premium Hair" },
-  { src: "/services.png", alt: "Advanced Skincare Facials" },
+  { src: "/services.png", alt: "Chroma Signature Elite Services" },
   { src: "/bridal_styling.png", alt: "Exquisite Bridal Transformations" },
-  { src: "/skincare_treatment.png", alt: "Certified Salon Experts" },
+  { src: "/lip_microblading.png", alt: "Premium Lip Microblading" },
 ];
 
 export default function Hero({ t, scrollToSection }: HeroProps) {
