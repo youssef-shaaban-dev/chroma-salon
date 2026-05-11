@@ -45,7 +45,7 @@ export default function Services({ t }: ServicesProps) {
           <div className="relative aspect-square sm:aspect-video lg:aspect-[4/5] w-full rounded-2xl overflow-hidden shadow-lg border border-brand-rose/15 hidden md:block">
             <Image
               src="/services_premium.png"
-              alt="Fine quality aesthetic skincare services"
+              alt="Fine quality aesthetic premium beauty services"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover object-center transform scale-105 hover:scale-110 transition duration-700"

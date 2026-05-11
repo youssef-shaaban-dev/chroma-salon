@@ -16,11 +16,11 @@
     },
     "whyUs": {
       "title": "Why Choose Chroma Salon",
-      "sub": "Dedicated to bringing out your inner beauty through expert care.",
+      "sub": "Committed to revealing your natural beauty through expert care.",
       "points": [
         {
           "title": "Certified Experts",
-          "desc": "Our top beauty specialists hold prestigious international certifications."
+          "desc": "Our top beauty specialists dedicated to ensuring your flawless look."
         },
         {
           "title": "Premium Products",
@@ -47,8 +47,8 @@
         },
         {
           "id": "skincare",
-          "title": "Premium Skincare & Facials",
-          "desc": "Revitalize your glow with medical-grade facials and clinical-level hydration."
+          "title": "Lip Microblading & Blushing",
+          "desc": "Enhance your natural lip color and definition with long-lasting, flawless techniques."
         },
         {
           "id": "makeup",
@@ -112,8 +112,8 @@
       "desc": "The pinnacle of luxury hair, skincare, and bridal expertise. Redefine your beauty.",
       "info": "Our Information",
       "help": "Instant Help",
-      "hours": "Hours: Mon - Sat: 10am - 9pm | Sun: Closed",
-      "location": "Fawzi Al-Mughrabi St., Amman, Jordan",
+      "hours": "Hours: Everyday 10am - 8pm",
+      "location": "Fawzi Al-Mughrabi St., Al Kurdi Complex, Amman, Jordan",
       "copy": "© 2026 Chroma Salon. All Rights Reserved.",
       "callUs": "Call Us Now",
       "chatUs": "WhatsApp"

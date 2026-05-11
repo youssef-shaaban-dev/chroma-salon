@@ -15,10 +15,10 @@ interface FooterProps {
 export default function Footer({ t, scrollToSection }: FooterProps) {
   return (
     <footer className="bg-brand-dark text-white pt-16 pb-8 px-6 lg:px-12 border-t border-brand-rose/10">
-      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-start text-left mb-12">
+      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-start text-left rtl:text-right mb-12">
         {/* Logo Brand / Summary */}
         <div className="md:col-span-4 space-y-4">
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-3 rtl:space-x-reverse">
             <Image
               src="/white-logo.jpg"
               alt="Chroma Salon Logo"
@@ -32,7 +32,7 @@ export default function Footer({ t, scrollToSection }: FooterProps) {
           <p className="text-sm font-light text-white/70 leading-relaxed max-w-sm">
             {t.footer.desc}
           </p>
-          <div className="flex items-center space-x-4 pt-2">
+          <div className="flex items-center space-x-4 rtl:space-x-reverse pt-2">
             <a
               href="https://www.instagram.com/chroma.byhairboy?igsh=M2d6YjlzajU4dnJs"
               target="_blank"
@@ -101,7 +101,7 @@ export default function Footer({ t, scrollToSection }: FooterProps) {
       {/* Copy / Fine Print */}
       <div className="max-w-7xl mx-auto w-full pt-8 border-t border-white/10 text-center flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-light text-white/40">
         <p>{t.footer.copy}</p>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 rtl:space-x-reverse">
           <button
             onClick={() => scrollToSection("services")}
             className="hover:text-brand-rose transition duration-200"
