@@ -143,7 +143,14 @@ export default function Hero({ t, scrollToSection }: HeroProps) {
           </div>
 
           {/* Overlay Glass Badge */}
-          <div className="absolute bottom-6 left-6 rtl:left-auto rtl:right-6 bg-white/75 backdrop-blur-md px-6 py-4 rounded-2xl border border-brand-rose/20 max-w-xs shadow-xl hidden sm:flex items-center space-x-4 rtl:space-x-reverse z-30 pointer-events-none select-none">
+          <motion.a
+            href="https://wa.me/962799639434"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.98 }}
+            className="absolute bottom-6 left-6 rtl:left-auto rtl:right-6 bg-white/75 backdrop-blur-md px-6 py-4 rounded-2xl border border-brand-rose/20 max-w-xs shadow-xl hidden sm:flex items-center space-x-4 rtl:space-x-reverse z-30 cursor-pointer"
+          >
             <CalendarCheck className="w-10 h-10 text-brand-rose flex-shrink-0" />
             <div>
               <h4 className="text-sm font-bold text-brand-dark">{t.hero.badgeTitle}</h4>
@@ -151,7 +158,7 @@ export default function Hero({ t, scrollToSection }: HeroProps) {
                 {t.hero.badgeDesc}
               </p>
             </div>
-          </div>
+          </motion.a>
         </motion.div>
       </div>
     </section>
